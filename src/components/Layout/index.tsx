@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import Logo from '@components/SVGs/logo';
 import * as theme from '@identity/index';
+import Nav from '@components/Nav';
 import { LayoutContainer } from './styles';
 
 interface Props {
@@ -14,7 +15,10 @@ const Layout = ({ children }: Props) => {
     <ThemeProvider theme={theme}>
       <PerfectScrollbar>
         <LayoutContainer>
-          <Logo width={200} height={100} />
+          <div>
+            <Logo width={200} height={100} />
+            <Nav />
+          </div>
           {children}
         </LayoutContainer>
       </PerfectScrollbar>
