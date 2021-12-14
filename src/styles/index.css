@@ -174,11 +174,16 @@ small {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none !important;
   text-decoration-thickness: 0;
   position: relative;
   outline: none;
+  color: var(--color-black)
 }
 
 a::after {

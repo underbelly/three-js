@@ -17,3 +17,8 @@ export const LayoutContainer = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const LayoutInner = styled.div`
+  position: relative;
+  z-index: 1;
+`;

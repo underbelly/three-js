@@ -69,7 +69,7 @@ const WebGLView = () => {
   useEffect(() => void onScroll({ target: scrollArea.current }), []);
 
   return (
-    <>
+    <div style={{ height: '100vh' }}>
       <Canvas camera={{ fov: 75, position: [0, 0, 120] }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[0, 0, 0]} color="white" />
@@ -104,7 +104,7 @@ const WebGLView = () => {
       <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
         <div style={{ height: `${state.pages * 100}vh` }} />
       </div>
-    </>
+    </div>
   );
 };
 

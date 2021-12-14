@@ -1,23 +1,15 @@
-import Link from 'next/link';
-import React from 'react';
+import { GetStaticProps } from 'next';
+import data from '@public/data.json';
 
-const Examples = () => {
-  return (
-    <ul>
-      <li>
-        <Link href="/examples/webgl">Webgl</Link>
-      </li>
-      <li>
-        <Link href="/examples/d3">D3</Link>
-      </li>
-      <li>
-        <Link href="/examples/framer-motion">Framer Motion</Link>
-      </li>
-      <li>
-        <Link href="/examples/react-hooks">React Hooks</Link>
-      </li>
-    </ul>
-  );
+export { default } from '@views/Example/landing';
+
+export const getStaticProps: GetStaticProps = async () => {
+  const examples = data
+    .find((d) => d.title === 'examples')
+    .examples.map((ex) => ex.name);
+
+  return {
+    props: { examples },
+    revalidate: 60,
+  };
 };
-
-export default Examples;

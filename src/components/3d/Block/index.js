@@ -23,9 +23,11 @@ function Block({ children, offset, factor, bgColor, title, ...props }) {
   const [refItem, inView] = useInView({
     threshold: 0,
   });
+
   React.useEffect(() => {
     inView && (document.body.style.background = bgColor);
   }, [inView]);
+
   return (
     <offsetContext.Provider value={offset}>
       <group {...props} position={[0, -sectionHeight * offset * factor, 0]}>

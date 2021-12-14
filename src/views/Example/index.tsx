@@ -3,11 +3,13 @@ import { ExampleProps } from '@identity/types';
 import SandboxEmbed from '@components/SandboxEmbed';
 import CodepenEmbed from '@components/CodepenEmbed';
 import { createDynamicInput } from '@lib/dynamicComponents';
+import ExampleLink from '@components/ExampleLink';
 import { ExampleContainer } from './styles';
 
 const dynamicComponents = {
   codesandbox: (props: any) => <SandboxEmbed {...props} />,
   codepen: (props: any) => <CodepenEmbed {...props} />,
+  link: (props: any) => <ExampleLink {...props} />,
 };
 
 const DynamicContent = createDynamicInput(dynamicComponents);

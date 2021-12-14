@@ -11,6 +11,10 @@ import '@styles/index.css';
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
+  React.useEffect(() => {
+    document.body.style.background = '';
+  }, [router]);
+
   return (
     <Layout>
       <AnimatePresence exitBeforeEnter key="app_root">

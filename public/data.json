@@ -101,31 +101,42 @@
             "title": "Basic React Three Fiber Example",
             "description": "",
             "slug": "basic-threejs-scene-with-react-three-fiber-06c9h",
-            "type": "codesandbox"
+            "type": "codesandbox",
+            "placeholder": "basic_react3.png"
           },
           {
             "title": "Gradient Material",
             "description": "Create a gradient material and use it on an object in threejs",
             "slug":"threejs-gradient-uzz2b",
-            "type": "codesandbox"
+            "type": "codesandbox",
+            "placeholder":  "gradient_cube.png"
           },
           {
             "title": "Imported 3D Model Example",
             "description": "How to import an animated model into threejs",
             "slug": "threejs-imported-model-d4irh",
-            "type": "codesandbox"
+            "type": "codesandbox",
+            "placeholder": "fox.png"
           },
           {
             "title": "Animated gradient with Mouse controlled light",
             "description": "Using a function to move a gradient around a plane while moving a light with your mouse pointer creates a cool effect. Its actually the effect we use for our footer on our main site underbelly.is",
-            "slug": "threejs-mouse-position-radial-gradient-background-using-lights-0031t",
+            "slug": "threejs-mouse-light-gradient-background-with-animated-material-gradient-24y3o",
             "type": "codesandbox"
           },
           {
             "title": "Haunted House",
             "description": "A spooky scene set in a graveyard with ghosts - ThreeJS",
             "slug": "haunted-house-3js-dvq8v",
-            "type": "codesandbox"
+            "type": "codesandbox",
+            "placeholder": "haunted_house.png"
+          },
+          {
+            "title": "3D Exploration",
+            "description": "This project although rough around the edges was initially started to encourage our team to work together to create a 3d space in our free time. Our designers started learning cinema 4D and some of our developers were eager to use custom 3D assets in our react stack. This page has a couple custom made assets and it was built using react three fiber. Its still a work in progress but we will continue to build on the idea and encourage new teammates to learn and contribute to our 3D projects",
+            "repo": "/examples/webgl/3d",
+            "type": "link",
+            "placeholder": "space.png"
           }
         ]
       },
@@ -156,6 +167,27 @@
             "description": "A Hook to take care of wrapping functions in a set timeout... The React way.",
             "slug": "usetimeout-v8no5",
             "type": "codesandbox"
+          }
+        ]
+      },
+      {
+        "name": "hacktober-fest",
+        "description": "Over the past couple years we have held meetups for Hacktober-fest. A one month code sprint to encourage everyone to contribute to open source projects. Our team has also created a couple projects during those code sprints. Check them out below.",
+        "sandboxes": [
+          {
+            "title": "Open source D3 Covid Data Visualization",
+            "description": "This project was a lot of fun. We wanted to create a project that could easily be contributed to and provide some helpful data in an easily digestible way. The project received pull requests from over 20 contributors and the project is looking great",
+            "slug": "github/mahowa/Covid-19-d3",
+            "repo": "https://github.com/mahowa/Covid-19-d3",
+            "type": "codesandbox",
+            "placeholder": "d3covid19.png"
+          },
+          {
+            "title": "snek",
+            "description": "Typescript and Node console app rendition of that one snake game.",
+            "repo": "https://github.com/denvaar/snek",
+            "type": "link",
+            "placeholder":"snek.gif"
           }
         ]
       }
