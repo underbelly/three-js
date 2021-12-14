@@ -183,7 +183,7 @@ a {
   text-decoration-thickness: 0;
   position: relative;
   outline: none;
-  color: var(--color-black)
+  color: var(--color-black);
 }
 
 a::after {
